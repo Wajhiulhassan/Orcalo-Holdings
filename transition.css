@@ -1,0 +1,8 @@
+.btn-transition {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for background-color and color */
+  }
+
+  .btn-transition:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
