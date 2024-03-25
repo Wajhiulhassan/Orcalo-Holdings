@@ -1,0 +1,14 @@
+.btn-primary {
+    cursor: pointer;
+    color: #fff !important;
+    background-color: #00aeef !important;
+    font-family: Inter, sans-serif;
+    font-weight: 600 !important;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 8px 18px 10px;
+    text-decoration: none;
+    border: 2px solid #00aeef;
+    text-transform: capitalize;
+    background-size: 200% 200%;
+}
