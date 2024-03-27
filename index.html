@@ -9,31 +9,9 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/button-style.css">
-    <link rel="stylesheet" href="./assets/css/carousel.css">
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        .text-sec {
-            font-size: 1.0rem;
-            text-align: left;
-            width: 50%;
-        }
-
-        .custom-heading {
-            text-align: center;
-            font-weight: bolder;
-            font-size: 36px;
-        }
-
-        .custom-paragraph {
-            text-align: center;
-            font-size: 24px;
-        }
-    </style>
+    <link rel="stylesheet" href="../components/navbar.css">
+    <link rel="stylesheet" href="assets/css/container.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="bg-light">
@@ -44,113 +22,21 @@
                 .then(data => document.querySelector('header').innerHTML = data);
         </script>
     </header>
-    <div id="carouselAutoplaying" class="carousel slide carousel-fade m-4" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="carousel-caption text-start text-dark">
-                    <div class="text-sec caption-text">
-                        <h1>Let's Bring Your
-                            <span class="text-primary">Vision</span>
-                            <br> To Life
-                        </h1>
-                        <p class="my-3">We are software engineers who build IT solutions
-                            <br>with better designs and functions to help you solve
-                            <br>customer problems.
-                        </p>
-                        <a class="btn btn-primary m-2" href="#" role="button">Contact Us</a>
-                    </div>
-                </div>
-                <img src="../assets/images/first-slider-image.svg" class="d-block w-50" alt="...">
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-caption text-start text-dark">
-                    <div class="text-sec caption-text">
-                        <h1>The Only
-                            <span class="text-primary">Compatible</span>
-                            <br> Partner
-                        </h1>
-                        <p class="my-3">We are software engineers who build IT solutions
-                            <br>with better designs and functions to help you solve
-                            <br>customer problems.
-                        </p>
-                        <a class="btn btn-primary m-2" href="#" role="button">Contact Us</a>
-                    </div>
-                </div>
-                <img src="../assets/images/second-slider-image.svg" class="d-block w-50" alt="...">
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-caption text-start text-dark">
-                    <div class="text-sec caption-text">
-                        <h1>The Only
-                            <span class="text-primary">Compatible</span>
-                            <br> Partner
-                        </h1>
-                        <p class="my-3">We engineer your products that help you solve customer
-                            <br> problems offering fast and reliable solutions that are
-                            <br> digitally yours.
-                        </p>
-                        <a class="btn btn-primary m-2" href="#" role="button">Contact Us</a>
-                    </div>
-                </div>
-                <img src="../assets/images/third-slider-image.svg" class="d-block w-50" alt="image">
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-caption text-start text-dark">
-                    <h1>The
-                        <span class="text-primary">Innovative</span>
-                        Power
-                        <br>
-                        Of Generation
-                    </h1>
-                    <p class="my-3">We build innovative solutions for smart minds
-                        <br>
-                        meeting the possibilities of a
-                        <br>
-                        better future.
-                        <br>
-                    </p>
-                    <a class="btn btn-primary m-2" href="#" role="button">Contact Us</a>
-                </div>
-                <img src="../assets/images/fourth-slider-image.svg" class="d-block w-50" alt="...">
+    <!-- Services Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <h1 class="display-4 custom-heading">Our Services</h1>
+                <p class="lead custom-paragraph text-dark">We are a team of experts who create simple software solutions
+                    for<br>remarkably complex challenges. We will engineer your products and help<br>you solve customer
+                    problems.
+                </p>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-1">
-                    <a class="d-block" target="_blank" href="https://www.linkedin.com/company/orcaloholdings">
-                        <img src="../assets/images/linkedin.png" class="bi" alt="LinkedIn">
-                    </a>
-                </div>
-                <div class="col-1">
-                    <a class="d-block" target="_blank" href="https://twitter.com/OrcaloHoldings">
-                        <img src="../assets/images/twitter.png" class="bi" alt="Twitter">
-                    </a>
-                </div>
-                <div class="col-1">
-                    <a class="d-block" target="_blank" href="https://www.instagram.com/orcaloholdings/">
-                        <img src="../assets/images/instagram.png" class="bi" alt="Instagram">
-                    </a>
-                </div>
-                <div class="col-1">
-                    <a class="d-block" target="_blank" href="https://www.facebook.com/orcaloholdings/">
-                        <img src="../assets/images/facebook.png" class="bi" alt="Facebook">
-                    </a>
-                </div>
-            </div>
+        <div class="serves-left-image">
+            <img src="../assets/images/service-img-1.png" alt="" srcset="">
         </div>
-
     </div>
-
-    <div class="container col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-        <h1 class="display-4 custom-heading">Our Services</h1>
-        <p class="lead custom-paragraph text-dark ">We are a team of experts who create simple software solutions
-            for<br>
-            remarkably complex challenges. We will engineer your products and help<br> you solve customer problems.</p>
-    </div>
-    <div class="serves-left-image">
-        <img src="../assets/images/service-img-1.png" alt="" srcset="">
-    </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

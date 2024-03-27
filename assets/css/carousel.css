@@ -1,31 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .carousel-item img {
-    width: 50%;
     float: inline-end;
 }
 
 .carousel-caption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    color: #fff;
-}
-
-
-.caption-text h1 {
-    font-weight: bold;
-    font-size: 36px;
-}
-
-.caption-text {
-    text-align: left;
-}
-
-.caption-text p {
-    font-size: 24px;
-}
-
-.carousel-caption {
-    margin-right: auto;
+    float: inline-start;
+    
 }
