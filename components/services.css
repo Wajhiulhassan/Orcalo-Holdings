@@ -7,23 +7,21 @@
     margin: 0px 70px;
 }
 
-.innerDivInFluid div .col h1 {
+.innerDivInFluid .col h1 {
     color: #231f20;
     font-size: 64px;
     font-family: Inter, sans-serif;
     font-weight: 800;
     margin-bottom: 8px;
     padding-bottom: 20px;
-
 }
 
-.innerDivInFluid div .col p {
+.innerDivInFluid .col p {
     font-family: Inter, sans-serif !important;
     font-size: 24px;
     font-weight: 400 !important;
     color: #554c50;
     margin-bottom: 48px;
-
 }
 
 .container-fluid {
@@ -33,54 +31,31 @@
     padding-right: 30px;
 }
 
- /* .cards-sec {
+.cards-sec {
     padding: 60px 20px 0 !important;
-} */
+    margin-left: 5px !important;
+}
 
- .card {
-    padding: 30px 20px 0 ;
-    margin-left: 60px;
+.card, .card-r {
+    padding: 30px 20px 0;
     min-height: 340px;
     color: #231f20 !important;
     font-size: 14px;
     border-radius: 10px !important;
     border: 2px solid #231f20 !important;
-
-}
- .card-r {
-    padding: 30px 20px 0 ;
-    margin-right: 50px;
-    min-height: 340px;
-    color: #231f20 !important;
-    font-size: 14px;
-    border-radius: 10px !important;
-    border: 2px solid #231f20 !important;
-
-}
-
-.card:hover {
     background-size: 200% 200%;
     background-image: linear-gradient(0deg, #00aeef 50%, #fff 0);
-    transition: background-position .5s, color .5s ease;
-    transition: .5s;
-    color: #00aeef;
-    background-image: linear-gradient(0deg, #00aeef 50%, #fff 0);
-    transition: background-position .5s, color .5s ease;
-} 
-
-.card-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-family: Inter, sans-serif !important;
-    font-weight: 400 !important;
-    text-align: center !important;
+    transition: background-position 0.5s, color 0.5s ease;
 }
-.card-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-family: Inter, sans-serif !important;
-    font-weight: 400 !important;
-    text-align: center !important;
+
+.card-r {
+    margin-right: -5px;
+}
+
+.card:hover, .card-r:hover {
+    background-position: right bottom;
+    color: #fff;
+    border-color: #fff;
 }
 
 .card-p {
@@ -92,15 +67,43 @@
     margin-bottom: 1rem;
     padding: 50px 85px 48px 48px !important;
 }
+
 .card-tr {
-    font-family: Inter, sans-serif !important;
-    font-size: 24px;
-    font-weight: 400 !important;
-    color: #554c50;
-    margin-top: 0px;
-    margin-bottom: 1rem;
-    padding: 50px 48px 48px 85px !important;
+    padding: 50px 90px 48px 85px !important;
 }
+
 .icon {
     padding: 20px;
+}
+
+.link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #00aeef;
+}
+/* Add this CSS */
+.cards-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Optional: Adjust as needed */
+}
+
+.cards-sec .fade-up-section {
+    display: flex;
+}
+
+.cards-sec .fade-up-section .cards-sec .card {
+    flex: 1;
+    margin-bottom: 30px; /* Optional: Adjust as needed */
+}
+
+.cards-sec .fade-up-section .cards-sec .card-r {
+    flex: 1;
+    margin-bottom: 30px; /* Optional: Adjust as needed */
 }
